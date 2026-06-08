@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diaa Hammud | Advanced Intelligence Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- القائمة العلوية الهجينة المستقبليّة -->
+    <header>
+        <div class="logo">Diaa Hammud</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item active" data-page="home" id="nav-home">الرئيسية</a></li>
+                <li><a href="#" class="nav-item" data-page="internet-danger" id="nav-danger">مخاطر الإنترنت</a></li>
+                <li><a href="#" class="nav-item" data-page="cybersecurity" id="nav-cyber">الأمن السيبراني</a></li>
+                <li><a href="#" class="nav-item" data-page="info-systems" id="nav-systems">نظم المعلومات</a></li>
+                <li><a href="#" class="nav-item" data-page="data-protection" id="nav-protection">حماية البيانات</a></li>
+                <li><a href="#" class="nav-item" data-page="cyber-stories" id="nav-stories">هجمات تاريخية</a></li>
+            </ul>
+        </nav>
+        <div class="lang-selector">
+            <select id="language-change">
+                <option value="ar" selected>العربية (AR)</option>
+                <option value="en">English (EN)</option>
+                <option value="he">עברית (HE)</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- صفحة الرئيسية الترحيبية -->
+        <section id="home" class="page-content active">
+            <div class="hero-section">
+                <h1 id="home-title">بوابة التكنولوجيا والمعرفة المتقدمة</h1>
+                <p id="home-desc">أكاديمية رقمية متكاملة تهدف إلى تشريح مخاطر الفضاء السيبراني المعقدة، واستكشاف أحدث
+                    إستراتيجيات الدفاع الأمني، وتحليل بنية نظم المعلومات وإدارة البيانات الضخمة في المؤسسات الحديثة.</p>
+                <div class="tech-icon-container">
+                    <div class="pulse-circle"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- صفحة مخاطر الإنترنت -->
+        <section id="internet-danger" class="page-content">
+            <h1 id="danger-title">التشريح الأكاديمي لمهددات الفضاء الرقمي</h1>
+            <p id="danger-subtitle">لم تعد التهديدات مجرد فيروسات عابرة، بل تحولت إلى منظومات تخريبية منظمة تديرها شبكات
+                دولية ومجموعات قرصنة متقدمة تستهدف البنى التحتية للمعلومات.</p>
+
+            <div class="card-grid">
+                <div class="card cyber-alert">
+                    <h3 id="danger-c1-title">💀 برمجيات الفدية والملفات الخبيثة المتطورة (Advanced Ransomware)</h3>
+                    <p id="danger-c1-desc">تعتمد برمجيات الفدية الحديثة على إستراتيجية "الابتزاز المزدوج"، حيث تقوم
+                        أولاً بتسريب البيانات الحساسة إلى خوادم المهاجمين ثم تشفيرها محلياً باستخدام خوارزميات هجينة
+                        معقدة مثل RSA-2048 و AES-256. يصبح من المستحيل رياضياً فك التشفير بدون المفتاح الخاص، ويتم
+                        ملاحقة الضحية مالياً عبر العملات الرقمية المشفرة لضمان عدم تتبع الجناة.</p>
+                </div>
+                <div class="card cyber-alert">
+                    <h3 id="danger-c2-title">🎭 الهندسة الاجتماعية الموجهة والتزييف العميق (Spear Phishing & Deepfakes)
+                    </h3>
+                    <p id="danger-c2-desc">تطور الاصطياد التقليدي إلى اصطياد موجه (Spear Phishing) يعتمد على جمع معلومات
+                        استخباراتية دقيقة عن الضحية عبر مصادر مفتوحة (OSINT). ويتكامل هذا التهديد حالياً مع تقنيات
+                        الذكاء الاصطناعي التوليدي والـ Deepfake لتزوير البصمات الصوتية ومقاطع الفيديو لرؤساء الشركات،
+                        مما يدفع الموظفين لتنفيذ تحويلات مالية ضخمة أو تسريب كلمات مرور استراتيجية.</p>
+                </div>
+                <div class="card cyber-alert">
+                    <h3 id="danger-c3-title">⚡ هجمات حجب الخدمة الموزعة والمتقدمة (Layer 7 DDoS Attacks)</h3>
+                    <p id="danger-c3-desc">تستهدف الهجمات الحديثة طبقة التطبيقات (Application Layer - Layer 7) بدلاً من
+                        خنق الشبكة فقط. يتم توجيه ملايين الطلبات الشرعية المقنعة (مثل طلبات البحث المتكررة داخل الموقع)
+                        عبر شبكات من الأجهزة المخترقة (Botnets)، مما يستنزف موارد المعالج وقواعد البيانات الخاصة بالخادم
+                        ويؤدي إلى انهياره التام وعزله عن شبكة الإنترنت.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- صفحة الأمن السيبراني -->
+        <section id="cybersecurity" class="page-content">
+            <h1 id="cyber-title">هندسة الدفاع السيبراني وسياسات الحماية الشاملة</h1>
+            <p id="cyber-subtitle">الأمن السيبراني ليس منتجاً يتم شراؤه، بل هو علم تكاملي يجمع بين التكنولوجيا المتطورة،
+                والسياسات الصارمة، والوعي البشري المستمر.</p>
+
+            <div class="featured-flex">
+                <div class="card permanent-glowing">
+                    <h3 id="cyber-c1-title">📐 الركائز الثلاثية لأمن البيانات (The CIA Triad Architecture)</h3>
+                    <p id="cyber-c1-desc">تتمحور كل الأنظمة الأمنية حول ثلاثة أهداف رئيسية:
+                        <br><strong>1. السرية (Confidentiality):</strong> منع الوصول غير المصرح به للبيانات من خلال
+                        تطبيق التشفير القوي أثناء النقل (TLS/SSL) وأثناء التخزين، وإدارة صلاحيات الوصول بدقة.
+                        <br><strong>2. السلامة (Integrity):</strong> ضمان عدم تعديل البيانات أو العبث بها، وذلك
+                        بالاعتماد على دالات التجزئة الرياضية (Cryptographic Hashing) مثل SHA-256 والتواقيع الرقمية.
+                        <br><strong>3. التوافر (Availability):</strong> بقاء البيانات والخدمات متاحة للمستخدمين عبر
+                        تصميم بنية تحتية مرنة (Redundancy)، وموازنة الأحمال (Load Balancing)، وخطط التعافي الكارثي
+                        (Disaster Recovery).
+                    </p>
+                </div>
+                <div class="card permanent-glowing">
+                    <h3 id="cyber-c2-title">🛡️ إستراتيجية الثقة الصفرية وأنظمة الردع (Zero Trust & EDR)</h3>
+                    <p id="cyber-c2-desc">تنتقل المؤسسات الحديثة من أمن المحيط التقليدي إلى نموذج "الثقة الصفرية" (Zero
+                        Trust) الذي يرفع شعار "لا تثق أبداً، تحقق دائماً". يتم التحقق من هوية أي مستخدم وجهاز في كل
+                        عملية اتصال، بالتوازي مع تشغيل أنظمة كشف واستجابة تهديدات الأجهزة الطرفية (EDR) التي تستخدم
+                        الذكاء الاصطناعي لتحليل سلوك النظام وعزل التهديدات ديناميكياً قبل انتشارها.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- صفحة نظم المعلومات -->
+        <section id="info-systems" class="page-content">
+            <h1 id="systems-title">هندسة وإدارة نظم المعلومات بالمؤسسات (Enterprise IS)</h1>
+            <p id="systems-subtitle">العمود الفقري التقني الذي يدير الأصول المعرفية ويحول البيانات الخام الضخمة إلى
+                قرارات استراتيجية تمنح المؤسسات ميزة تنافسية مستدامة.</p>
+
+            <div class="card-grid">
+                <div class="card tech-structure">
+                    <h3 id="systems-c1-title">⚙️ التداخل الهيكلي للمكونات الستة لنظم المعلومات</h3>
+                    <p id="systems-c1-desc">يتكامل نظام المعلومات الحديث من خلال ستة عناصر أساسية تعمل بانسجام: العتاد
+                        المادي (Hardware) كالأجهزة والخوادم السحابية، البرمجيات (Software) وتشمل أنظمة التشغيل والـ ERP،
+                        البيانات (Data) المادة الخام للنظام، الشبكات والاتصالات لضمان التدفق، الإجراءات (Procedures) وهي
+                        القواعد المنظمة للعمليات، وأخيراً الأفراد (People) من محللي نظم ومديرين ومستخدمين.</p>
+                </div>
+                <div class="card tech-structure">
+                    <h3 id="systems-c2-title">📊 مستودعات البيانات الكبرى وذكاء الأعمال (Data Warehousing & BI)</h3>
+                    <p id="systems-c2-desc">تمتلك المؤسسات كميات هائلة من البيانات غير المنظمة (Big Data). تقوم نظم
+                        المعلومات المتقدمة بعمليات الاستخراج والتحويل والشحن (ETL) لتجميع هذه البيانات داخل مستودعات
+                        رقمية (Data Warehouses). ومن ثم يتم تطبيق خوارزميات التنقيب عن البيانات (Data Mining) وأدوات
+                        ذكاء الأعمال (BI) لإنتاج لوحات تحكم تفاعلية وتقارير تنبؤية تدعم الإدارة في اتخاذ القرارات
+                        المصيرية بناءً على حقائق ومؤشرات علمية دقيقة.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- صفحة حماية البيانات والحسابات الشخصية -->
+        <section id="data-protection" class="page-content">
+            <h1 id="protection-title">إستراتيجيات حماية البيانات وتحصين الهوية الرقمية</h1>
+            <p id="protection-subtitle">كيف تحمي نفسك، حساباتك، وأصولك الرقمية من هجمات الاختراق المتقدمة باستخدام
+                معايير الأمن الشخصي والمؤسساتي.</p>
+
+            <div class="card-grid">
+                <div class="card protection-style">
+                    <h3 id="protection-c1-title">🔑 إدارة الهوية والتحقق متعدد العوامل (MFA & IAM)</h3>
+                    <p id="protection-c1-desc">تعتبر كلمة المرور وحدها خط دفاع ضعيف. يجب حماية الحسابات عن طريق تفعيل
+                        التحقق متعدد العوامل (MFA)، والذي يتطلب دمج شيئين: شيء تعرفه (كلمة المرور) وشيء تملكه (رموز
+                        تطبيق التحقق مثل Google Authenticator أو المفاتيح المادية YubiKey). يمنع هذا الأسلوب 99% من
+                        هجمات اختراق الحسابات حتى لو تم تسريب كلمة المرور الخاصة بك.</p>
+                </div>
+                <div class="card protection-style">
+                    <h3 id="protection-c2-title">🔒 تشفير البيانات والاتصالات السيبرانية (End-to-End Encryption)</h3>
+                    <p id="protection-c2-desc">لحماية بياناتك أثناء انتقالها عبر شبكة الإنترنت، يجب استخدام بروتوكولات
+                        حماية متطورة مثل الشبكات الافتراضية الخاصة (VPN) الموثوقة لتشفير حزم البيانات، والتأكد من
+                        استخدام بروتوكول HTTPS في المتصفحات. كما ينصح بتخزين الملفات الحساسة على أقراص صلبة مشفرة محلياً
+                        بالاعتماد على أدوات مثل BitLocker أو VeraCrypt لمنع الوصول إليها في حال سرقة الجهاز المادي.</p>
+                </div>
+                <div class="card protection-style">
+                    <h3 id="protection-c3-title">📦 تطبيق سياسة النسخ الاحتياطي (3-2-1 Backup Strategy)</h3>
+                    <p id="protection-c3-desc">لتحصين البيانات ضد التلف الفجائي أو هجمات برمجيات الفدية، يجب تطبيق
+                        القاعدة العالمية للنسخ الاحتياطي: الاحتفاظ بـ 3 نسخ من البيانات، مخزنة على نوعين مختلفين من
+                        وسائط التخزين (مثل قرص صلب خارجي ووحدة تخزين سحابية)، مع وضع نسخة واحدة على الأقل في مكان جغرافي
+                        منفصل تماماً وبعيد عن الشبكة (Off-site / Offline).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- الصفحة الجديدة: قصص اختراق تاريخية كبرى -->
+        <section id="cyber-stories" class="page-content">
+            <h1 id="stories-title">أعظم الهجمات السيبرانية وعمليات الاختراق في التاريخ</h1>
+            <p id="stories-subtitle">جولة تاريخية وتحليلية داخل أشهر الهجمات الرقمية التي هزت الحكومات، وعطلت البنى
+                التحتية، وغيرت مفاهيم الحروب غير المتكافئة.</p>
+
+            <div class="card-grid">
+                <div class="card historic-attack">
+                    <h3 id="stories-c1-title">☢️ دودة ستوكسنت (Stuxnet) - السلاح الرقمي الذي دمر المفاعلات</h3>
+                    <p id="stories-c1-desc">يعتبر Stuxnet أول سلاح سيبراني عسكري في العالم. تم اكتشافه عام 2010، وهو
+                        عبارة عن دودة برمجية بالغة التعقيد استهدفت منشأة نطנز النووية في إيران. المثير للدهشة أن المنشأة
+                        كانت معزولة تماماً عن الإنترنت (Air-Gapped)، فتم إدخال الدودة عبر فلاشة USB من قبل عميل. استغلت
+                        الدودة 4 ثغرات بيوم الصفر (Zero-Day) لتخترق برمجيات التحكم الصناعي (SCADA) من شركة Siemens،
+                        وأمرت أجهزة الطرد المركزي بالدوران بسرعة جنونية مدمرة حتى تحطمت فيزيائياً، بينما كانت الشاشات
+                        تعرض للمراقبين أن كل شيء يعمل بشكل طبيعي!</p>
+                </div>
+                <div class="card historic-attack">
+                    <h3 id="stories-c2-title">💥 هجوم واناركراي (WannaCry) - ليلة شلل العالم</h3>
+                    <p id="stories-c2-desc">في مايو 2017، اجتاح هجوم برمجية فدية مرعب أكثر من 200 ألف جهاز كمبيوتر في
+                        150 دولة خلال ساعات معدودة. استغل المهاجمون ثغرة أمنية خطيرة في نظام ويندوز تُدعى "EternalBlue"
+                        (كانت قد تسربت من وكالة الأمن القومي الأمريكية NSA). تسبب الهجوم في شلل تام لمستشفيات الهيئة
+                        الصحية البريطانية (NHS)، ومحطات القطارات في ألمانيا، وشركات الاتصالات ومصانع السيارات الكبرى،
+                        حيث قام بتشفير البيانات والمطالبة بفدية بالبيتكوين، مبرهناً على خطورة الاعتماد على أنظمة غير
+                        محدثة.</p>
+                </div>
+                <div class="card historic-attack">
+                    <h3 id="stories-c3-title">🛰️ هجوم سولارويندز (SolarWinds) - الاختراق الصامت العابر للحكومات</h3>
+                    <p id="stories-c3-desc">في أواخر عام 2020، تم اكتشاف واحد من أكثر الهجمات الذكية تعقيداً ويُعرف
+                        باختراق "سلسلة التوريد" (Supply Chain Attack). بدلاً من اختراق الحكومات مباشرة، قام القراصنة
+                        باختراق شركة SolarWinds التي تنتج برمجيات لإدارة الشبكات تستخدمها كبرى الهيئات. قام المهاجمون
+                        بزرع كود خبيث داخل التحديثات الرسمية للبرنامج وضختها الشركة بنفسها لعملائها! ونتيجة لذلك، تم
+                        اختراق وزارت الدفاع، والخارجية، والطاقة، والأمن الداخلي الأمريكية، إضافة إلى مئات الشركات
+                        التقنية الكبرى دون أن يشعر أحد لشهور طويلة.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p id="footer-text">&copy; 2026 Diaa Hammud. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- محرك الترجمة الفورية والتحكم الديناميكي الشامل باللغات الثلاث -->
+    <script>
+        const translations = {
+            ar: {
+                dir: "rtl",
+                "nav-home": "الرئيسية",
+                "nav-danger": "مخاطر الإنترنت",
+                "nav-cyber": "الأمن السيبراني",
+                "nav-systems": "نظم المعلومات",
+                "nav-protection": "حماية البيانات",
+                "nav-stories": "هجمات تاريخية",
+                "home-title": "بوابة التكنولوجيا والمعرفة المتقدمة",
+                "home-desc": "أكاديمية رقمية متكاملة تهدف إلى تشريح مخاطر الفضاء السيبراني المعقدة، واستكشاف أحدث إستراتيجيات الدفاع الأمني، وتحليل بنية نظم المعلومات وإدارة البيانات الضخمة في المؤسسات الحديثة.",
+                "danger-title": "التشريح الأكاديمي لمهددات الفضاء الرقمي",
+                "danger-subtitle": "لم تعد التهديدات مجرد فيروسات عابرة، بل تحولت إلى منظومات تخريبية منظمة تديرها شبكات دولية ومجموعات قرصنة متقدمة تستهدف البنى التحتية للمعلومات.",
+                "danger-c1-title": "💀 برمجيات الفدية والملفات الخبيثة المتطورة (Advanced Ransomware)",
+                "danger-c1-desc": "تعتمد برمجيات الفدية الحديثة على إستراتيجية 'الابتزاز المزدوج'، حيث تقوم أولاً بتسريب البيانات الحساسة إلى خوادم المهاجمين ثم تشفيرها محلياً باستخدام خوارزميات هجينة معقدة مثل RSA-2048 و AES-256. يصبح من المستحيل رياضياً فك التشفير بدون المفتاح الخاص، ويتم ملاحقة الضحية مالياً عبر العملات الرقمية المشفرة لضمان عدم تتبع الجناة.",
+                "danger-c2-title": "🎭 الهندسة الاجتماعية الموجهة والتزييف العميق (Spear Phishing & Deepfakes)",
+                "danger-c2-desc": "تطور الاصطياد التقليدي إلى اصطياد موجه (Spear Phishing) يعتمد على جمع معلومات استخباراتية دقيقة عن الضحية عبر مصادر مفتوحة (OSINT). ويتكامل هذا التهديد حالياً مع تقنيات الذكاء الاصطناعي التوليدي والـ Deepfake لتزوير البصمات الصوتية ومقاطع الفيديو لرؤساء الشركات، مما يدفع الموظفين لتنفيذ تحويلات مالية ضخمة أو تسريب كلمات مرور استراتيجية.",
+                "danger-c3-title": "⚡ هجمات حجب الخدمة الموزعة والمتقدمة (Layer 7 DDoS Attacks)",
+                "danger-c3-desc": "تستهدف الهجمات الحديثة طبقة التطبيقات (Application Layer - Layer 7) بدلاً من خنق الشبكة فقط. يتم توجيه ملايين الطلبات الشرعية المقنعة (مثل طلبات البحث المتكررة داخل الموقع) عبر شبكات من الأجهزة المخترقة (Botnets)، مما يستنزف موارد المعالج وقواعد البيانات الخاصة بالخادم ويؤدي إلى انهياره التام وعزله عن شبكة الإنترنت.",
+                "cyber-title": "هندسة الدفاع السيبراني وسياسات الحماية الشاملة",
+                "cyber-subtitle": "الأمن السيبراني ليس منتجاً يتم شراؤه، بل هو علم تكاملي يجمع بين التكنولوجيا المتطورة، والسياسات الصارمة، والوعي البشري المستمر.",
+                "cyber-c1-title": "📐 الركائز الثلاثية لأمن البيانات (The CIA Triad Architecture)",
+                "cyber-c1-desc": "تتمحور كل الأنظمة الأمنية حول ثلاثة أهداف رئيسية:<br><strong>1. السرية (Confidentiality):</strong> منع الوصول غير المصرح به للبيانات من خلال تطبيق التشفير القوي أثناء النقل (TLS/SSL) وأثناء التخزين، وإدارة صلاحيات الوصول بدقة.<br><strong>2. السلامة (Integrity):</strong> ضمان عدم تعديل البيانات أو العبث بها، وذلك بالاعتماد على دالات التجزئة الرياضية (Cryptographic Hashing) مثل SHA-256 والتواقيع الرقمية.<br><strong>3. التوافر (Availability):</strong> بقاء البيانات والخدمات متاحة للمستخدمين عبر تصميم بنية تحتية مرنة (Redundancy)، وموازنة الأحمال (Load Balancing)، وخطط التعافي الكارثي (Disaster Recovery).",
+                "cyber-c2-title": "🛡️ إستراتيجية الثقة الصفرية وأنظمة الردع (Zero Trust & EDR)",
+                "cyber-c2-desc": "تنتقل المؤسسات الحديثة من أمن المحيط التقليدي إلى نموذج 'الثقة الصفرية' (Zero Trust) الذي يرفع شعار 'لا تثق أبداً، تحقق دائماً'. يتم التحقق من هوية أي مستخدم وجهاز في كل عملية اتصال، بالتوازي مع تشغيل أنظمة كشف واستجابة تهديدات الأجهزة الطرفية (EDR) التي تستخدم الذكاء الاصطناعي لتحليل سلوك النظام وعزل التهديدات ديناميكياً قبل انتشارها.",
+                "systems-title": "هندسة وإدارة نظم المعلومات بالمؤسسات (Enterprise IS)",
+                "systems-subtitle": "العمود الفقري التقني الذي يدير الأصول المعرفية ويحول البيانات الخام الضخمة إلى قرارات استراتيجية تمنح المؤسسات ميزة تنافسية مستدامة.",
+                "systems-c1-title": "⚙️ التداخل الهيكلي للمكونات الستة لنظم المعلومات",
+                "systems-c1-desc": "يتكامل نظام المعلومات الحديث من خلال ستة عناصر أساسية تعمل بانسجام: العتاد المادي (Hardware) كالأجهزة والخوادم السحابية، البرمجيات (Software) وتشمل أنظمة التشغيل والـ ERP، البيانات (Data) المادة الخام للنظام، الشبكات والاتصالات لضمان التدفق, الإجراءات (Procedures) وهي القواعد المنظمة للعمليات، وأخيراً الأفراد (People) من محللي نظم ومديرين ومستخدمين.",
+                "systems-c2-title": "📊 مستودعات البيانات الكبرى وذكاء الأعمال (Data Warehousing & BI)",
+                "systems-c2-desc": "تمتلك المؤسسات كميات هائلة من البيانات غير المنظمة (Big Data). تقوم نظم المعلومات المتقدمة بعمليات الاستخراج والتحويل والشحن (ETL) لتجميع هذه البيانات داخل مستودعات رقمية (Data Warehouses). ومن ثم يتم تطبيق خوارزميات التنقيب عن البيانات (Data Mining) وأدوات ذكاء الأعمال (BI) لإنتاج لوحات تحكم تفاعلية وتقارير تنبؤية تدعم الإدارة في اتخاذ القرارات المصيرية بناءً على حقائق ومؤشرات علمية دقيقة.",
+                "protection-title": "إستراتيجيات حماية البيانات وتحصين الهوية الرقمية",
+                "protection-subtitle": "كيف تحمي نفسك، حساباتك، وأصولك الرقمية من هجمات الاختراق المتقدمة باستخدام معايير الأمن الشخصي والمؤسساتي.",
+                "protection-c1-title": "🔑 إدارة الهوية والتحقق متعدد العوامل (MFA & IAM)",
+                "protection-c1-desc": "تعتبر كلمة المرور وحدها خط دفاع ضعيف. يجب حماية الحسابات عن طريق تفعيل التحقق متعدد العوامل (MFA)، والذي يتطلب دمج شيئين: شيء تعرفه (كلمة المرور) وشيء تملكه (رموز تطبيق التحقق مثل Google Authenticator أو المفاتيح المادية YubiKey). يمنع هذا الأسلوب 99% من هجمات اختراق الحسابات حتى لو تم تسريب كلمة المرور الخاصة بك.",
+                "protection-c2-title": "🔒 تشفير البيانات والاتصالات السيبرانية (End-to-End Encryption)",
+                "protection-c2-desc": "لحماية بياناتك أثناء انتقالها عبر شبكة الإنترنت، يجب استخدام بروتوكولات حماية متطورة مثل الشبكات الافتراضية الخاصة (VPN) الموثوقة لتشفير حزم البيانات، والتأكد من استخدام بروتوكول HTTPS في المتصفحات. كما ينصح بتخزين الملفات الحساسة على أقراص صلبة مشفرة محلياً بالاعتماد على أدوات مثل BitLocker أو VeraCrypt لمنع الوصول إليها في حال سرقة الجهاز المادي.",
+                "protection-c3-title": "📦 تطبيق سياسة النسخ الاحتياطي (3-2-1 Backup Strategy)",
+                "protection-c3-desc": "لتحصين البيانات ضد التلف الفجائي أو هجمات برمجيات الفدية، يجب تطبيق القاعدة العالمية للنسخ الاحتياطي: الاحتفاظ بـ 3 نسخ من البيانات، مخزنة على نوعين مختلفين من وسائط التخزين (مثل قرص صلب خارجي ووحدة تخزين سحابية)، مع وضع نسخة واحدة على الأقل في مكان جغرافي منفصل تماماً وبعيد عن الشبكة (Off-site / Offline).",
+                "stories-title": "أعظم الهجمات السيبرانية وعمليات الاختراق في التاريخ",
+                "stories-subtitle": "جولة تاريخية وتحليلية داخل أشهر الهجمات الرقمية التي هزت الحكومات، وعطلت البنى التحتية، وغيرت مفاهيم الحروب غير المتكافئة.",
+                "stories-c1-title": "☢️ دودة ستوكسنت (Stuxnet) - السلاح الرقمي الذي دمر المفاعلات",
+                "stories-c1-desc": "يعتبر Stuxnet أول سلاح سيبراني عسكري في العالم. تم اكتشافه عام 2010، وهو عبارة عن دودة برمجية بالغة التعقيد استهدفت منشأة نطنز النووية في إيران. المثير للدهشة أن المنشأة كانت معزولة تماماً عن الإنترنت (Air-Gapped)، فتم إدخال الدودة عبر فلاشة USB من قبل عميل. استغلت الدودة 4 ثغرات بيوم الصفر (Zero-Day) لتخترق برمجيات التحكم الصناعي (SCADA) من شركة Siemens، وأمرت أجهزة الطرد المركزي بالدوران بسرعة جنونية مدمرة حتى تحطمت فيزيائياً، بينما كانت الشاشات تعرض للمراقبين أن كل شيء يعمل بشكل طبيعي!",
+                "stories-c2-title": "💥 هجوم واناركراي (WannaCry) - ليلة شلل العالم",
+                "stories-c2-desc": "في مايو 2017، اجتاح هجوم برمجية فدية مرعب أكثر من 200 ألف جهاز كمبيوتر في 150 دولة خلال ساعات معدودة. استغل المهاجمون ثغرة أمنية خطيرة في نظام ويندوز تُدعى 'EternalBlue' (كانت قد تسربت من وكالة الأمن القومي الأمريكية NSA). تسبب الهجوم في شلل تام لمستشفيات الهيئة الصحية البريطانية (NHS)، ومحطات القطارات في ألمانيا، وشركات الاتصالات ومصانع السيارات الكبرى، حيث قام بتشفير البيانات والمطالبة بفدية بالبيتكوين، مبرهناً على خطورة الاعتماد على أنظمة غير محدثة.",
+                "stories-c3-title": "🛰️ هجوم سولارويندز (SolarWinds) - الاختراق الصامت العابر للحكومات",
+                "stories-c3-desc": "في أواخر عام 2020، تم اكتشاف واحد من أكثر الهجمات الذكية تعقيداً ويُعرف باختراق 'سلسلة التوريد' (Supply Chain Attack). بدلاً من اختراق الحكومات مباشرة، قام القراصنة باختراق شركة SolarWinds التي تنتج برمجيات لإدارة الشبكات تستخدمها كبرى الهيئات. قام المهاجمون بزرع كود خبيث داخل التحديثات الرسمية للبرنامج وضختها الشركة بنفسها لعملائها! ونتيجة لذلك، تم اختراق وزارات الدفاع، والخارجية، والطاقة، والأمن الداخلي الأمريكية، إضافة إلى مئات الشركات التقنية الكبرى دون أن يشعر أحد لشهور طويلة.",
+                "footer-text": "© 2026 Diaa Hammud. جميع الحقوق محفوظة."
+            },
+            en: {
+                dir: "ltr",
+                "nav-home": "Home",
+                "nav-danger": "Internet Dangers",
+                "nav-cyber": "Cybersecurity",
+                "nav-systems": "Info Systems",
+                "nav-protection": "Data Protection",
+                "nav-stories": "Cyber Attacks",
+                "home-title": "Advanced Technology & Knowledge Hub",
+                "home-desc": "A comprehensive digital academy designed to deconstruct complex cyber threats, explore state-of-the-art security defense architectures, and analyze modern information systems and Big Data operations.",
+                "danger-title": "Academic Analysis of Cyber Space Threats",
+                "danger-subtitle": "Threats have mutated from basic viruses into highly organized cyber-warfare ecosystems operated by advanced persistent threat (APT) groups targeting global enterprise infrastructures.",
+                "danger-c1-title": "💀 Advanced Ransomware & Double Extortion",
+                "danger-c1-desc": "Modern ransomware variations leverage a double-extortion protocol: they exfiltrate confidential enterprise directories to command servers before executing local cryptographic lockdowns via hybrid algorithms like RSA-2048 and AES-256. Remediation without private keys is mathematically impossible, forcing victims into untraceable cryptocurrency dynamic tracking.",
+                "danger-c2-title": "🎭 Spear Phishing & Generative AI Deepfakes",
+                "danger-c2-desc": "Traditional mass phishing has evolved into hyper-targeted Spear Phishing, built upon rigorous Open Source Intelligence (OSINT) gathering. This threat now seamlessly integrates with Generative AI and deepfakes to replicate corporate executive audio-visual biometrics, manipulating staff into high-value wire transfers and credential leaks.",
+                "danger-c3-title": "⚡ Application Layer Distributed Denial of Service (Layer 7 DDoS)",
+                "danger-c3-desc": "Advanced DDoS vectors bypass classic network bottlenecks to strike directly at Application Layer 7. By coordinating millions of high-computational legitimate queries (like intensive database searches) across global Botnets, attackers fully exhaust the target host's CPU and database thread capacities, dropping the web infrastructure.",
+                "cyber-title": "Cyber Defense Engineering & Comprehensive Security",
+                "cyber-subtitle": "Cybersecurity is not a commercial product; it is an integrative science fusing defensive technology, structural compliance frameworks, and human capital awareness.",
+                "cyber-c1-title": "📐 The CIA Triad Architectural Pillars",
+                "cyber-c1-desc": "Every architectural defense perimeter converges on three fundamental data paradigms:<br><strong>1. Confidentiality:</strong> Mitigating unauthorized access vectors via advanced asymmetric encryption during transit (TLS/SSL) and at rest.<br><strong>2. Integrity:</strong> Safeguarding data from arbitrary modification using secure cryptographic hashing functions like SHA-256 and digital signing algorithms.<br><strong>3. Availability:</strong> Assuring data services remain continuously operational by deploying horizontal redundancy, load balancing, and strict Disaster Recovery (DR) frameworks.",
+                "cyber-c2-title": "🛡️ Zero Trust Architectures & Endpoint Detection (EDR)",
+                "cyber-c2-desc": "Enterprise structures are shifting from perimeter security to a Zero Trust paradigm ('Never trust, always verify'). Every single user access request and node device is dynamically authenticated. Concurrently, Endpoint Detection and Response (EDR) agents utilize behavioral machine learning to isolate threats before horizontal network propagation occurs.",
+                "systems-title": "Enterprise Information Systems Architecture (IS)",
+                "systems-subtitle": "The definitive technological backbone managing corporate knowledge assets, converting unstructured Big Data into structural competitive advantages.",
+                "systems-c1-title": "⚙️ The Structural Nexus of the 6 IS Components",
+                "systems-c1-desc": "A modern enterprise ecosystem operates via the strict synthesis of six integrated elements: Physical Hardware (cloud compute nodes), Core Software (ERP and operating systems), Data Assets (the raw organizational fuel), Telecom Networks (ensuring low-latency routing), Operational Procedures (governance frameworks), and Human Capital (analysts, administrators, and users).",
+                "systems-c2-title": "📊 Data Warehousing & Strategic Business Intelligence (BI)",
+                "systems-c2-desc": "To harness unorganized Big Data streams, advanced information architectures deploy Extract-Transform-Load (ETL) pipelines to ingest data into unified Data Warehouses. Business Intelligence (BI) mining engines and analytics algorithms then map this clean information into real-time analytical dashboards, allowing executives to execute predictive strategic choices.",
+                "protection-title": "Data Protection Strategies & Digital Identity Fortification",
+                "protection-subtitle": "How to shield yourself, your accounts, and digital assets from advanced exploitation using industry-standard cyber hygiene frameworks.",
+                "protection-c1-title": "🔑 Identity Management & Multi-Factor Authentication (MFA)",
+                "protection-c1-desc": "Passwords alone represent an insufficient line of defense. Shield accounts by enforcing Multi-Factor Authentication (MFA), combining something you know (password) with something you inherit/own (TOTP via Google Authenticator or hardware YubiKeys). This prevents over 99% of bulk hijacking attempts even during severe credential exposure.",
+                "protection-c2-title": "🔒 Cryptographic Protocols & End-to-End Tunneling",
+                "protection-c2-desc": "To secure data payload integrity across untrusted network nodes, deploy premium Virtual Private Networks (VPNs) alongside mandatory HTTPS browser rules. Furthermore, enforce hardware-level full disk encryption (FDE) locally via BitLocker or VeraCrypt to negate systemic physical theft vectors completely.",
+                "protection-c3-title": "📦 The Structural 3-2-1 Disaster Backup Topology",
+                "protection-c3-desc": "To comprehensively build resilience against malicious file targeting or structural ransomware actions, implement the global 3-2-1 standard: maintain three localized copies of production records across two distinct hardware mediums, keeping one air-gapped offline storage hub geographically isolated.",
+                "stories-title": "Greatest Cyber Attacks & Historic Breaches",
+                "stories-subtitle": "An academic deep dive into historical digital offensives that crippled infrastructures, compromised states, and redefined hybrid warfare.",
+                "stories-c1-title": "☢️ Stuxnet Worm - The Malware That Destroyed Nuclear Turbines",
+                "stories-c1-desc": "Discovered in 2010, Stuxnet is recognized as the world's first operational weaponized malware. It targeted Iran's air-gapped Natanz enrichment facility via a rogue insider USB drive. Exploiting four Zero-Day vulnerabilities, it silently hijacked Siemens SCADA systems, commanding centrifuges to spin at destructive frequencies while spoofing safety dashboards to report normal data telemetry.",
+                "stories-c2-title": "💥 WannaCry Ransomware - The Night the World Paused",
+                "stories-c2-desc": "In May 2017, a devastating ransomware payload hit over 200,000 systems across 150 countries within hours. Utilizing the leaked NSA 'EternalBlue' Windows SMB vulnerability, it caused global chaos, locking data structures across the UK's National Health Service (NHS), German rail logistics, and massive industrial factories.",
+                "stories-c3-title": "🛰️ SolarWinds Orion - The Omnipresent Supply Chain Penetration",
+                "stories-c3-desc": "Unveiled in late 2020, this operation redefined 'Supply Chain' cyber warfare. State-backed APT groups breached SolarWinds' software compilation pipeline, embedding a covert backdoor into verified application updates. Over 18,000 corporate and government networks downloaded the malicious payload, compromising US Pentagon nodes undetected for months.",
+                "footer-text": "© 2026 Diaa Hammud. All Rights Reserved."
+            },
+            he: {
+                dir: "rtl",
+                "nav-home": "דף הבית",
+                "nav-danger": "סכנות האינטרנט",
+                "nav-cyber": "אבטחת מידע",
+                "nav-systems": "מערכות מידע",
+                "nav-protection": "הגנת נתונים",
+                "nav-stories": "מתקפות היסטוריות",
+                "home-title": "שער לטכנולוגיה ולידע מתקדם",
+                "home-desc": "אקדמיה דיגיטלית מקיפה שמטרתה לנתח איומי סייבר מורכבים, לחקור אסטרטגיות הגנה מתקדמות ולהבין את המבנה של מערכות מידע וניהול נתוני עתק בארגונים מודרניים.",
+                "danger-title": "ניתוח אקדמי של איומי המרחב הדיגיטלי",
+                "danger-subtitle": "האיומים כבר אינם וירוסים פשוטים, אלא הפכו למערכות חבלה מאורגנות המנוהלות על ידי רשתות בינלאומיות וקבוצות תקיפה מתקדמות (APT).",
+                "danger-c1-title": "💀 תוכנות כופר מתקדמות וסחיטה כפולה (Advanced Ransomware)",
+                "danger-c1-desc": "תוכנות כופר מודרניות פועלות בשיטת 'סחיטה כפולה': הן מדליפות מידע רגיש לשרתי התוקפים לפני הצפנתו המקומית באמצעות אלגוריתמים היברידיים מורכבים כגון RSA-2048 ו-AES-256. שחזור המידע ללא המפתח הפרטי הוא בלתי אפשרי מתמטית, והסחיטה מבוצעת דרך מטבעות קריפטוגרפיים כדי למנוע מעקב.",
+                "danger-c2-title": "🎭 הנדסה חברתית ממוקדת וזיוף עמוק (Spear Phishing & Deepfakes)",
+                "danger-c2-desc": "פישינג מסורתי הפך לפישינג ממוקד (Spear Phishing) המבוסס על איסוף מודיעין מדויק על הקורבן ממקורות גלויים (OSINT). איום זה משתלב כיום עם טכנולוגיות בינה מלאכותית יוצרת ו-Deepfake לזיוף קול ווידאו של מנהלים, דבר המוביל עובדים לבצע העברות כספים או לחשוף סיסמאות.",
+                "danger-c3-title": "⚡ מתקפת מניעת שירות מבוזרות בשכבת האפליקציה (Layer 7 DDoS)",
+                "danger-c3-desc": "מתקפות DDoS מודרניות פוגעות ישירות בשכבת האפליקציה (Layer 7) במקום רק לחנוק את תעבורת הרשת. מיליוני בקשות לגיטימיות לכאורה (כמו חיפושים מורכבים באתר) מופנות בו-זמנית דרך רשתות בוטנטים (Botnets), דבר שמכל המשאבים של השרת ומביא לקריסתו המלאה.",
+                "cyber-title": "הנדסת הגנת סייבר ומדיניות אבטחה מקיפה",
+                "cyber-subtitle": "אבטחת סייבר אינה מוצר מדף, אלא מדע אינטגרטיבי המשלב טכנולוגיה מתקדמת, נהלים קשיחים ומודעות אנושית מתמדת.",
+                "cyber-c1-title": "📐 שלושת עמודי התווך של אבטחת מידע (The CIA Triad)",
+                "cyber-c1-desc": "כל מערכות האבטחה סובבות סביב שלושה יעדים מרכזיים:<br><strong>1. סודיות (Confidentiality):</strong> מניעת גישה לא מורשית למידע באמצעות הצפנה חזקה במעבר (TLS/SSL) ובמנוחה, וניהול הרשאות קפדני.<br><strong>2. שלמות (Integrity):</strong> הבטחת אי-שינוי המידע על ידי שימוש בפונקציות גיבוב קריפטוגרפיות (Hashing) כגון SHA-256 וחתימות דיגיטליות.<br><strong>3. זמינות (Availability):</strong> שמירה על זמינות המערכות והשירותים למשתמשים באמצעות ארכיטקטורה שרידה (Redundancy), איזון עומסים (Load Balancing) ותוכניות התאוששות מאסון (DR).",
+                "cyber-c2-title": "🛡️ ארכיטקטורת אפס אמון ומערכות תגובה (Zero Trust & EDR)",
+                "cyber-c2-desc": "ארגונים מודרניים עוברים למודל 'אפס אמון' (Zero Trust) שמשמעותו 'לעולם אל תסמוך, תמיד תאמת'. כל בקשת גישה ומכשיר מאומתים באופן דינמי בכל התחברות. במקביל, מערכות EDR משתמשות בבינה מלאכותית כדי לנתח התנהגות מערכת ולבודד איומים בנקודות הקצה לפני התפשטותם ברשת הארגונית.",
+                "systems-title": "ארכיטקטורה וניהול של מערכות מידע ארגוניות (Enterprise IS)",
+                "systems-subtitle": "עמוד השדרה הטכולוגי המנהל את נכסי הידע של הארגון והופך נתוני עתק גולמיים להחלטות אסטרטגיות המעניקות יתרון תחרותי.",
+                "systems-c1-title": "⚙️ האינטגרציה המבנית של ששת רכיבי מערכות המידע",
+                "systems-c1-desc": "מערכת מידע מודרנית מורכבת משילוב של שישה אלמנטים: חומרה (Hardware) כגון שרתים ותשתיות ענן, תוכנה (Software) הכוללת מערכות הפעלה ו-ERP, נתונים (Data) המהווים את חומר הגלם, רשתות ותקשורת להעברת הידע, תהליכים ונהלים (Procedures) המגדירים את זרימת העבודה, ואנשים (People) - מנתחי מערכות, מנהלים ומשתמשי קצה.",
+                "systems-c2-title": "📊 מחסני נתונים ובינה עסקית (Data Warehousing & BI)",
+                "systems-c2-desc": "ארגונים מחזיקים בכמויות עצומות של נתוני עתק (Big Data). מערכות מידע מתקדמות מבצעות תהליכי ETL כדי לרכז נתונים אלו בתוך מחסני נתונים מרכזיים (Data Warehouses). לאחר מכן מופעלים אלגוריתמים של כריית נתונים (Data Mining) וכלי בינה עסקית (BI) המפיקים לוחות בקרה אינטראקטיביים המסייעים להנהלה לקבל החלטות אסטרטגיות מבוססות עובדות.",
+                "protection-title": "אסטרטגיות הגנת נתונים וביצור זהות דיגיטלית",
+                "protection-subtitle": "כיצד להגן על עצמך, על חשבונותיך ועל הנכסים הדיגיטליים שלך מפני התקפות מתקדמות באמצעות שימוש בתקני אבטחה מודרניים.",
+                "protection-c1-title": "🔑 ניהול זהויות ואימות רב-שלבי (MFA)",
+                "protection-c1-desc": "סיסמה לבדה מהווה קו הגנה חלש. יש להגן על חשבונות על ידי הפעלת אימות רב-שלבי (MFA), הדורש שילוב של שני דברים: משהו שאתה יודע (סיסמה) ומשהו שבבעלותך (אפליקציית אימות כגון Google Authenticator או מפתח פיזי YubiKey). מנגנון זה מונע מעל 99% מניסיונות הפריצה לחשבונות.",
+                "protection-c2-title": "🔒 הצפנת נתונים ותקשורת מאובטחת (Encryption)",
+                "protection-c2-desc": "כדי להגן על המידע שלך בעת מעבר ברשת, יש להשתמש בפרוטוקולים מתקדמים כגון רשתות פרטיות וירטואליות (VPN) אמינות להצפנת חבילות המדע, ולוודא שימוש בפרוטוקול HTTPS בדפדפנים. כמו כן, מומלץ להצפין קבצים רגישים מקומית באמצעות BitLocker או VeraCrypt למניעת גישה במקרה של גניבת המכשיר.",
+                "protection-c3-title": "📦 יישום מדיניות גיבוי מובנית (3-2-1 Backup Strategy)",
+                "protection-c3-desc": "לבניית עמידות מוחלטת מפני אובדן נתונים פתאומי או מתקפות כופר, יש ליישם את תקן הגיבוי הגלובלי 3-2-1: שמור שלושה עותקים של המידע, על שני סוגי מדיה שונים (כגון כונן חיצוני ואחסון ענן), כאשר עותק אחד לפחות נשאר מנותק מהרשת וממוקם גיאוגרפית באתר מרוחק.",
+                "stories-title": "מתקפות הסייבר הגדולות והפריצות בהיסטוריה",
+                "stories-subtitle": "צלילה אקדמית והיסטורית אל תוך מתקפות דיגיטליות מפורסמות ששיתקו תשתיות מדינתיות, פגעו בממשלות ושינו את פני המלחמה המודרנית.",
+                "stories-c1-title": "☢️ תולעת סטוקסנט (Stuxnet) - הנשק הדיגיטלי שהרס צנטריפוגות",
+                "stories-c1-desc": "סטוקסנט, שהתגלתה בשנת 2010, נחשבת לנשק הסייבר הצבאי המבצעי הראשון בעולם. התולעת המורכבת פגעה במתקן העשרה הגרעיני בנתנז שבאיראן. למרות שהמתקן היה מנותק לחלוטין מהאינטרנט (Air-Gapped), הנוזקה הוחדרה דרך התקן USB על ידי סוכן. היא ניצלה 4 חולשות יום-אפס (Zero-Day) כדי לשבש את מערכות הבקרה התעשייתית (SCADA) של סימנס, וגרמה לצנטריפוגות להסתובב במהירות הרסנית עד להריסתן הפיזית, בזמן שמסכי הבקרה הציגו נתוני שווא שהכל תקין.",
+                "stories-c2-title": "💥 תוכנת הכופר וואנאקריי (WannaCry) - הלילה שבו העולם נעצר",
+                "stories-c2-desc": "במאי 2017, מתקפת כופרה אגרסיבית פגעה בלמעלה מ-200,000 מחשבים ב-150 מדינות תוך שעות בודדות. התוקפים ניצלו חולשת אבטחה חמורה במערכת הפעלה Windows המכונה 'EternalBlue' (שדלפה מסוכנות ה-NSA האמריקאית). המתקפה שיתקה לחלוטין את בתי החולים של מערכת הבריאות הבריטית (NHS), תחנות רכבת בגרמניה, וחברות ענק, תוך דרישת תשלום בביטקוין.",
+                "stories-c3-title": "🛰️ מתקפת סולארווינדס (SolarWinds) - חדירה שקטה לשרשרת האספקה",
+                "stories-c3-desc": "בסוף שנת 2020 נחשפה אחת ממתקפות הסייבר המתוחכמות ביותר הידועה כמתקפת 'שרשרת האספקה' (Supply Chain Attack). במקום לתקוף ישירות את משרדי הממשל, התוקפים חדרו לשרתי חברת SolarWinds המפתחת תוכנות לניהול רשתות. הם שתלו קוד זדוני בתוך עדכון תוכנה רשמי שהופץ אוטומטית ללקוחות! כתוצאה מכך, נפרצו משרדי ההגנה, האנרגיה והביטחון הלאומי של ארה''ב, לצד מאות חברות טכנולוגיה, ללא גילוי במשך חודשים ארוכים.",
+                "footer-text": "© 2026 Diaa Hammud. כל הזכויות שמורות."
+            }
+        };
+
+        const navItems = document.querySelectorAll('.nav-item');
+        const pages = document.querySelectorAll('.page-content');
+
+        navItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                navItems.forEach(nav => nav.classList.remove('active'));
+                pages.forEach(page => page.classList.remove('active'));
+
+                item.classList.add('active');
+                const targetPage = item.getAttribute('data-page');
+                document.getElementById(targetPage).classList.add('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        const langSelect = document.getElementById('language-change');
+        langSelect.addEventListener('change', (e) => {
+            setLanguage(e.target.value);
+        });
+
+        function setLanguage(lang) {
+            document.documentElement.dir = translations[lang].dir;
+            document.documentElement.lang = lang;
+
+            Object.keys(translations[lang]).forEach(key => {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
