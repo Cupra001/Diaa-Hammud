@@ -3,22 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>Diaa Hammud | Advanced Knowledge Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="dark-theme">
 
+    <!-- الزر الفني العلوي المركزي لإظهار القائمة - مصلح لمتصفحات آيفون وكרום -->
     <div id="top-trigger-container">
         <button id="header-toggle" title="تبديل ظهور القائمة">
             <span class="menu-icon">☰</span> <span id="toggle-btn-text">إظهار القائمة</span>
         </button>
     </div>
 
+    <!-- شريط أدوات التخصيص العائم (تلقائي التموضع حسب الجهاز) -->
     <div id="accessibility-toolbar">
         <div class="lang-selector">
-            <select id="language-change">
+            <select id="language-change" aria-label="Select Language">
                 <option value="ar" selected>AR</option>
                 <option value="en">EN</option>
                 <option value="he">HE</option>
@@ -33,6 +35,7 @@
         <button id="theme-toggle" title="تبديل الوضع">🌓</button>
     </div>
 
+    <!-- القائمة العلوية الفاخرة (تبدأ مخفية افتراضياً) -->
     <header id="site-header" class="header-hidden">
         <div class="logo">Diaa Hammud</div>
         <nav>
@@ -47,8 +50,10 @@
         </nav>
     </header>
 
+    <!-- حاوية المحتوى الفني الديناميكي المترجم بالكامل -->
     <main class="container" id="main-content">
 
+        <!-- قسم الرئيسية -->
         <section id="home" class="page-content active">
             <div class="hero-section">
                 <h1 id="home-title">بوابة التكنولوجيا والمعرفة المتقدمة</h1>
@@ -60,6 +65,7 @@
             </div>
         </section>
 
+        <!-- قسم مخاطر الإنترنت -->
         <section id="internet-danger" class="page-content">
             <h1 id="danger-title">التشريح الأكاديمي لمهددات الفضاء الرقمي</h1>
             <p id="danger-subtitle">لم تعد التهديدات مجرد فيروسات عابرة، بل تحولت إلى منظومات تخريبية منظمة تستهدف البنى
@@ -80,6 +86,7 @@
             </div>
         </section>
 
+        <!-- قسم الأمن السيبراني -->
         <section id="cybersecurity" class="page-content">
             <h1 id="cyber-title">هندسة الدفاع السيبراني وسياسات الحماية</h1>
             <p id="cyber-subtitle">الأمن السيبراني ليس منتجاً يتم شراؤه، بل هو علم تكاملي يجمع بين التكنولوجيا المتطورة،
@@ -88,7 +95,7 @@
                 <div class="card permanent-glowing">
                     <h3 id="cyber-c1-title">مثلث أمن البيانات (The CIA Triad)</h3>
                     <p id="cyber-c1-desc">تتمحور الهندسة الأمنية حول ثلاثة أركان رئيسية: السرية (Confidentiality) لضمان
-                        عدم الوصول غير المصرح للبيانات، السلامة (Integrity) لضمان عدم التعديل، والتوافر (Availability).
+                        عدم الوصول غير المصرح للبيانات, السلامة (Integrity) لضمان عدم التعديل، والتوافر (Availability).
                     </p>
                 </div>
                 <div class="card permanent-glowing">
@@ -99,6 +106,7 @@
             </div>
         </section>
 
+        <!-- قسم نظم المعلومات -->
         <section id="info-systems" class="page-content">
             <h1 id="systems-title">هندسة وإدارة نظم المعلومات بالمؤسسات</h1>
             <p id="systems-subtitle">العمود الفقري التقني الذي يدير الأصول المعرفية ويحول البيانات الخام الضخمة إلى
@@ -119,6 +127,7 @@
             </div>
         </section>
 
+        <!-- قسم حماية البيانات -->
         <section id="data-protection" class="page-content">
             <h1 id="protection-title">إستراتيجيات حماية البيانات وتحصين الهوية</h1>
             <p id="protection-subtitle">كيف تحمي نفسك، حساباتك، وأصولك الرقمية من هجمات الاختراق باستخدام معايير الأمن
@@ -138,6 +147,7 @@
             </div>
         </section>
 
+        <!-- قسم هجمات تاريخية -->
         <section id="cyber-stories" class="page-content">
             <h1 id="stories-title">أعظم الهجمات السيبرانية في التاريخ</h1>
             <p id="stories-subtitle">تحليل لأشهر الهجمات الرقمية التي هزت دولاً وغيرت مفاهيم الحروب والسيادة

@@ -43,21 +43,30 @@ body {
     overflow-x: hidden;
     transition: background-color 0.4s ease, color 0.4s ease;
     padding-bottom: 60px;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* زر إظهار القائمة العلوي المستقر بالمنتصف */
+/* 🌟 إصلاح موضع وحسابات الزر العلوي ليتوافق مع أجهزة الايفون ومتصفح Safari */
 #top-trigger-container {
     position: fixed;
-    top: 15px;
+    top: calc(15px + env(safe-area-inset-top));
+    /* الحماية التامة من التداخل مع نتوء الايفون السفلي والعلوي */
     left: 50%;
     transform: translateX(-50%);
     z-index: 2005;
     display: flex;
     justify-content: center;
     width: auto;
+    pointer-events: none;
+    /* يمنع حجب اللمس عن العناصر بالخلفية */
 }
 
 #header-toggle {
+    pointer-events: auto;
+    /* يعيد تفعيل اللمس للزر نفسه حصراً */
+    -webkit-appearance: none;
+    /* إلغاء التنسيق الافتراضي لمتصفح Safari */
+    appearance: none;
     background: var(--toolbar-bg);
     color: var(--accent-cyber) !important;
     border: 2px solid var(--accent-cyber) !important;
@@ -72,6 +81,8 @@ body {
     align-items: center;
     gap: 10px;
     white-space: nowrap;
+    touch-action: manipulation;
+    /* يزيل تأخير النقرة (300ms) في متصفحات الجوال */
     transition: transform 0.2s ease, background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
@@ -86,7 +97,7 @@ body {
     box-shadow: 0 6px 30px rgba(0, 242, 254, 0.6);
 }
 
-/* تأثير النبض الضوئي المبتكر لفتح القائمة */
+/* تفعيل الأنيميشن الفاخر للنبض */
 header.header-hidden~#top-trigger-container #header-toggle {
     animation: luxuryPulse 2.5s infinite;
 }
@@ -108,7 +119,7 @@ header.header-hidden~#top-trigger-container #header-toggle {
 /* شريط التخصيص والأدوات المتجاوب */
 #accessibility-toolbar {
     position: fixed;
-    bottom: 30px;
+    bottom: calc(30px + env(safe-area-inset-bottom));
     z-index: 2000;
     background: var(--toolbar-bg);
     border: 2px solid var(--border-color);
@@ -140,6 +151,7 @@ html[dir="ltr"] #accessibility-toolbar {
     cursor: pointer;
     padding: 8px 12px;
     border-radius: 20px;
+    touch-action: manipulation;
     transition: all 0.3s ease;
 }
 
@@ -149,6 +161,8 @@ html[dir="ltr"] #accessibility-toolbar {
     padding: 4px 6px;
     background: var(--card-bg);
     outline: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 #theme-toggle:hover,
@@ -168,9 +182,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 95px 5% 20px 5%;
-    /* مسافة علوية ممتازة لحماية شعار الموقع من الاختفاء تحت الزر */
+    padding: calc(95px + env(safe-area-inset-top)) 5% 20px 5%;
     background-color: var(--nav-bg);
+    -webkit-backdrop-filter: blur(16px);
+    /* لدعم تأثير الزجاج المغبش في متصفح Safari */
     backdrop-filter: blur(16px);
     position: sticky;
     top: 0;
@@ -231,11 +246,11 @@ nav ul li a.active {
     background: rgba(0, 242, 254, 0.05);
 }
 
-/* 🌟 تعديل منطقة الأمان (Safe Buffer Margin) في الحاوية الرئيسية */
+/* حاوية المحتوى الرئيسية - مع منطقة الأمان العازلة للشرح والكتابة */
 .container {
     max-width: 1200px;
-    margin-top: 100px;
-    /* دفع الشرح بالكامل لأسفل ليكون بعيداً عن الزر بمسافة آمنة ومريحة للعين */
+    margin-top: calc(110px + env(safe-area-inset-top));
+    /* دفع الكتابة والشرح للأسفل بمرونة مطلقة */
     margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -315,7 +330,6 @@ p {
     margin: 0;
 }
 
-/* الألوان الفنية المخصصة لكل قسم وموضوع */
 .cyber-alert {
     border-top: 4px solid var(--accent-danger);
 }
@@ -365,7 +379,7 @@ footer {
     margin-top: 80px;
 }
 
-/* دعم شاشات الهواتف بمرونة كاملة ودقة فائقة */
+/* دعم الشاشات الذكية والهواتف بدقة متناهية */
 @media (max-width: 767px) {
     #accessibility-toolbar {
         bottom: 0 !important;
@@ -375,7 +389,7 @@ footer {
         border-radius: 0;
         border: none;
         border-top: 2px solid var(--border-color);
-        padding: 12px 20px;
+        padding: 12px 20px calc(12px + env(safe-area-inset-bottom)) 20px;
         justify-content: space-around;
     }
 
@@ -387,8 +401,7 @@ footer {
     header {
         flex-direction: column;
         gap: 20px;
-        padding: 100px 20px 25px 20px;
-        /* ضبط وتوسيع المسافة العلوية في الهواتف */
+        padding: calc(110px + env(safe-area-inset-top)) 20px 25px 20px;
     }
 
     nav ul {
@@ -405,8 +418,7 @@ footer {
     }
 
     .container {
-        margin-top: 90px;
-        /* ضمان الحماية من التداخل في شاشات الموبايل الضيقة */
+        margin-top: calc(105px + env(safe-area-inset-top));
         margin-bottom: 30px;
         padding: 0 15px;
     }

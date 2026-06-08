@@ -25,7 +25,7 @@ const translations = {
         "cyber-c1-title": "مثلث أمن البيانات (The CIA Triad)",
         "cyber-c1-desc": "تتمحور الهندسة الأمنية حول ثلاثة أركان رئيسية: السرية (Confidentiality) لضمان عدم الوصول غير المصرح للبيانات، السلامة (Integrity) لضمان عدم التعديل، والتوافر (Availability).",
         "cyber-c2-title": "أنظمة الكشف والاستجابة (EDR & SIEM)",
-        "cyber-c2-desc": "تعتمد مراكز العمليات الأمنية (SOC) على الذكاء الاصطناعي لتحليل سجلات الأحداث لحظياً، مما يسمح بالتنبؤ بالهجمات السلوكية غير المعروفة مسبقاً (Zero-Day Attacks) وإيقافها.",
+        "cyber-c2-desc": "تعتمد مراكز العمليات الأمنية (SOC) على الذكاء الاصطناعي تحليل سجلات الأحداث لحظياً، مما يسمح بالتنبؤ بالهجمات السلوكية غير المعروفة مسبقاً (Zero-Day Attacks) وإيقافها.",
 
         "systems-title": "هندسة وإدارة نظم المعلومات بالمؤسسات",
         "systems-subtitle": "العمود الفقري التقني الذي يدير الأصول المعرفية ويحول البيانات الخام الضخمة إلى قرارات استراتيجية.",
@@ -113,7 +113,7 @@ const translations = {
         "btn-hide-header": "הסתר תפריט",
         "btn-show-header": "הצג תפריט",
 
-        "home-title": "שער לטכנולוגיה ולידע מתקדם",
+        "home-title": "שער לטכנولوجיה ולידע מתקדם",
         "home-desc": "אקדמיה דיגיטלית מקיפה שמטרתה לנתח איומי סייבר מורכבים, לחקור אסטרטגיות הגנה מתקדמות ולהבין את המבנה של מערכות מידע וניהול נתוני עתק בארגונים מודרניים.",
 
         "danger-title": "ניתוח אקדמי של איומי סייבר",
@@ -181,11 +181,14 @@ navItems.forEach(item => {
 
 // 2. محرك الترجمة الشامل لجميع الأقسام والكروت
 const langSelect = document.getElementById('language-change');
-langSelect.addEventListener('change', (e) => {
-    setLanguage(e.target.value);
-});
+if (langSelect) {
+    langSelect.addEventListener('change', (e) => {
+        setLanguage(e.target.value);
+    });
+}
 
 function setLanguage(lang) {
+    if (!translations[lang]) return;
     document.documentElement.dir = translations[lang].dir;
     document.documentElement.lang = lang;
 
@@ -200,18 +203,19 @@ function setLanguage(lang) {
 
 // 3. التحكم بالقائمة العلوية من الزر المركزي المستقر
 const headerToggle = document.getElementById('header-toggle');
-
-headerToggle.addEventListener('click', () => {
-    siteHeader.classList.toggle('header-hidden');
-    updateHeaderButtonText();
-});
+if (headerToggle) {
+    headerToggle.addEventListener('click', () => {
+        siteHeader.classList.toggle('header-hidden');
+        updateHeaderButtonText();
+    });
+}
 
 function updateHeaderButtonText() {
     const currentLang = document.documentElement.lang || 'ar';
     const isHidden = siteHeader.classList.contains('header-hidden');
     const btnText = document.getElementById('toggle-btn-text');
 
-    if (btnText) {
+    if (btnText && translations[currentLang]) {
         if (isHidden) {
             btnText.innerText = translations[currentLang]["btn-show-header"];
         } else {
@@ -222,35 +226,43 @@ function updateHeaderButtonText() {
 
 // 4. معالج الوضع الداكن والفاتح
 const themeToggle = document.getElementById('theme-toggle');
-themeToggle.addEventListener('click', () => {
-    if (document.body.classList.contains('dark-theme')) {
-        document.body.classList.remove('dark-theme');
-        document.body.classList.add('light-theme');
-    } else {
-        document.body.classList.remove('light-theme');
-        document.body.classList.add('dark-theme');
-    }
-});
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        if (document.body.classList.contains('dark-theme')) {
+            document.body.classList.remove('dark-theme');
+            document.body.classList.add('light-theme');
+        } else {
+            document.body.classList.remove('light-theme');
+            document.body.classList.add('dark-theme');
+        }
+    });
+}
 
 // 5. محرك التحكم بحجم الخطوط المستند لركيزة rem الديناميكية
 const increaseFontBtn = document.getElementById('font-increase');
 const decreaseFontBtn = document.getElementById('font-decrease');
 let currentFontSizePx = 16;
 
-increaseFontBtn.addEventListener('click', () => {
-    if (currentFontSizePx < 24) {
-        currentFontSizePx += 1;
-        document.documentElement.style.fontSize = `${currentFontSizePx}px`;
-    }
-});
+if (increaseFontBtn) {
+    increaseFontBtn.addEventListener('click', () => {
+        if (currentFontSizePx < 24) {
+            currentFontSizePx += 1;
+            document.documentElement.style.fontSize = `${currentFontSizePx}px`;
+        }
+    });
+}
 
-decreaseFontBtn.addEventListener('click', () => {
-    if (currentFontSizePx > 13) {
-        currentFontSizePx -= 1;
-        document.documentElement.style.fontSize = `${currentFontSizePx}px`;
-    }
-});
+if (decreaseFontBtn) {
+    decreaseFontBtn.addEventListener('click', () => {
+        if (currentFontSizePx > 13) {
+            currentFontSizePx -= 1;
+            document.documentElement.style.fontSize = `${currentFontSizePx}px`;
+        }
+    });
+}
 
 // إعداد الحالة الأولية الافتراضية عند التشغيل لأول مرة
-document.documentElement.lang = 'ar';
-updateHeaderButtonText();
+document.addEventListener('DOMContentLoaded', () => {
+    document.documentElement.lang = 'ar';
+    updateHeaderButtonText();
+});
